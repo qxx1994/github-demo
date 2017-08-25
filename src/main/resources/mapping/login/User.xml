@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.qxx.login.dao.UserDao">
-    <insert id="add" parameterType="com.qxx.login.entity.User">
+    <insert id="add" parameterType="User">
         insert into user(nickname,username,password) values(#{nickname},#{username},#{password})
     </insert>
 </mapper>
